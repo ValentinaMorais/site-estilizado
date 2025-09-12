@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Air Pods Max</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0f1a;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* círculos no fundo */
+    body::before {
+      content: "";
+      position: absolute;
+      top: -100px;
+      left: -100px;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(0, 212, 255, 0.1) 0%, transparent 70%);
+      border-radius: 50%;
+      z-index: 0;
+    }
+
+    body::after {
+      content: "";
+      position: absolute;
+      bottom: -150px;
+      right: -150px;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(0, 212, 255, 0.08) 0%, transparent 70%);
+      border-radius: 50%;
+      z-index: 0;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1100px;
+      width: 100%;
+      padding: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .texto {
+      max-width: 500px;
+    }
+
+    .texto h3 {
+      color: #00d4ff;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .texto h1 {
+      font-size: 3rem;
+      margin: 0 0 1rem 0;
+    }
+
+    .texto p {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin-bottom: 2rem;
+      color: #cfcfcf;
+    }
+
+    .btn {
+      background: #00d4ff;
+      color: #0b0f1a;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #00aacc;
+    }
+
+    .imagem img {
+      width: 350px;
+      animation: flutuar 3s ease-in-out infinite;
+    }
+
+    @keyframes flutuar {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="imagem">
+      <img src="assets/air-pods.png" alt="Air Pods Max">
+    </div>
+    <div class="texto">
+      <h3>SOM PREMIUM</h3>
+      <h1>Air Pods Max</h1>
+      <p>Experimente o som em sua forma mais pura. Cancelamento de ruído adaptativo, qualidade de áudio excepcional e design ergonômico para o máximo conforto.</p>
+      <button class="btn">Saiba Mais</button>
+    </div>
+  </div>
+</body>
+</html>
